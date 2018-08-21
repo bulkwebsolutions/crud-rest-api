@@ -55,7 +55,7 @@ func main() {
 		panic(err)
 	}
 
-	// Method:   GET Default Endpoint //
+	// Method:   GET Default Endpoint 
 	// Resource: http://localhost:8080
 	app.Handle("GET", "/", func(ctx context.Context) {
 		ctx.JSON(context.Map{"message": "Welcome User Micro Service"})
